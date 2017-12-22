@@ -1,0 +1,77 @@
+npm init -y
+npm install webpack -D ------> Dev dependecy
+
+WEBPACK
+webpack ./app.js ./dist/bundle.js
+touch webpack.config.js ->webpack config.by default webpack looks for thi file .we can chnge the name
+
+in package.json--------
+
+"scripts": {
+    "build": "webpack"
+    <script-name>: 'name'
+  }
+
+----> npm run build(npm run <script-name>)
+
+
+
+
+
+
+BABEL
+install babel
+npm install --save-dev babel-loader babel-core
+Add babel module rules in webpack.config.js
+npm install babel-preset-env --save-dev
+Create .babelrc
+
+
+
+REACT
+npm install react react-dom -S
+npm install --save-dev babel-preset-react
+in .babelrc add react ------> "presets": ["env", "react"]
+
+
+
+static login pg
+user
+
+
+-----------------------------------------------------------------------------------------------------------------------
+sudo npm install -g create-react-app
+ create-react-app <project-directory> ------------>creates starter react app
+
+---------------------------------------------
+INSTALL SASS---> https://medium.com/front-end-hacking/how-to-add-sass-or-scss-to-create-react-app-c303dae4b5bc
+
+This is necessary in order to manually edit your webpack config files: --->npm run eject
+npm install sass-loader node-sass --save-dev
+
+================================================================================================
+Session-2
+stateless
+
+export default (props) => (
+<div />
+)	
+
+==================================================
+Life cycle
+-constructor
+-componentWillMount ->called after constructor
+-render---> set state is not advisable inside render because setstate will call render() again and it will stuck in infinite loop
+-componentDidMount ------> called after DOM ready (api calls)
+
+
+-componentWillRecieveProps(nextProps) -------->
+
+-shouldComponentUpdate----> if we return false from this method it will not update the component. (CAN STOP UPDATE OF CHILD ELEMENT WHEN A PARENT IS UPDATED)
+-componentWillUpdate -----------> called after state is changed.
+-render ----->after a state is updated render is called again
+-componentDidUpate --------->
+
+
+-----------------------
+json.Stringify

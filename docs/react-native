@@ -1,0 +1,114 @@
+TouchableOpacity
+TouchableHighlight
+ScrollView
+FlatList
+WebView
+Image--> uri- from remote location...require for local images
+TextInput
+---------------------------------------------------
+
+"__v": 0,
+  "_id": "5a2a2d1cb8a000ef5f390450",
+  "body": "test Notification",
+  "code": "90907",
+  "data": Object {
+    "url": "asdadas",
+  },
+  "nid": "a823f180-dbde-11e7-b4b2-fb776bb13d72",
+  "read": true,
+  "timestamp": "2017-12-08T06:11:40.824Z",
+  "title": "Welcome !!!",
+
+
+
+{this.props.notificationCount.count}
+
+
+
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTFkMDQxNTRkYTA2YTZiOTZhMTNlODMiLCJzdWIiOiJwcmFzaGFudC5kc2F0aGVAaGlsdGkuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE1MTI3MTg0OTksImV4cCI6MTUxMzE2ODQ5OX0.pBK_nl6BejQmEm92wX-XLGhZB6wzi4leSfBv1vcM24Q
+
+---------------------
+
+<View style={styles.notification}>
+                                    {this.props.notificationCount.count!=0?
+                                    <Text style={styles.notifBadge}>{this.props.notificationCount.count}</Text>:null}
+                                        <Icon 
+                                        name='bell'
+                                        size={20}
+                                        style = {{position:'absolute',zIndex:10}}
+                                        onPress={() => {
+                                            this.props.pauseVideo();
+                                            this.props.navigation.navigate('Notifications',{})
+                                        }} />
+                                    </View>
+
+---------------------
+
+<TouchableOpacity>
+    <View style={{flex: 1}}>
+        {checked}
+        <Text>Select all</Text>
+    </View>
+</TouchableOpacity>
+
+
+
+-----------------
+
+// this.setState({check: !this.state.check},()=>{
+        //     // this.props.selecteHandler(this.props.idx)
+        //     this.props.checked(this.props.idx,this.state.check);
+        // })
+
+         checkedItems = (index,state) => {
+            let newob = Object.assign({},this.state.checked,{[index]:state})
+            this.setState({
+                checked: newob
+            })
+    }
+
+// for (const i = 0, data = this.props.assistanceData.select; i < data.length; i++) {
+        //     if(this.state.checked.hasOwnProperty(i) && this.state.checked[i])
+        //     selectedItems.push(data[i])
+        //   }
+-----------------------------------------------------------------
+
+downloadResumable.downloadAsync().then(videoObject => {
+                        this.setState({ url:videoObject.uri, showVideo:true},() =>{
+                            console.log('uri from setstate >> ', videoObject.uri)
+                            asyncPost('video', videoObject.uri)
+                        });
+                        
+                    }
+
+
+-------------------------------------------------------------------------
+asyncPost('userDetail',JSON.stringify(eventLoginList.userDetail));
+
+-----------
+prashant.dsathe
+90907
+---------
+nitin.sharma2
+101342
+---------------
+ajith.varma
+65497
+
+----------------
+
+{/* <CheckBox
+	key={index}
+	style={styles.checkbox}
+	title={item}
+	textStyle = {styles.checkboxText}
+	checked={this.state.checked}
+	component= {View}
+	/> */}
+
+
+-----------------------
+blockchain
+hyperledger
+tierion
+

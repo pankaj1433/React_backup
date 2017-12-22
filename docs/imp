@@ -1,0 +1,135 @@
+to run on local---
+diable memcache in settings.php
+comment ssl in .htaccess
+
+
+LOAD DATA INFILE 'fm.csv' INTO TABLE test_fm IGNORE 1 LINES;
+
+
+---------------------------git branch color
+color_prompt="yes"
+parse_git_branch() {
+git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+if [ "$color_prompt" = yes ]; then
+PS1='\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[01;31m\] $(parse_git_branch)\[\033[00m\]\$ '
+else
+PS1='\u@\h:\W $(parse_git_branch)\$ '
+fi
+unset color_prompt force_color_prompt
+---------------------
+https://www.factmonster.com/features/creature-catalog/dragons
+
+curl -X PURGE -H "X-Acquia-Purge:infoplease.com" -H "Accept-Encoding: gzip" https://www.factmonster.com/features/creature-catalog/dragons
+
+-----------------------------------------------
+THEME
+
+sass -r sass-globbing --watch sass/fe.scss:css/fe.css
+
+
+to insert in FE fav :
+drush8 @fensite.dev sql-query "INSERT INTO favorites ( uid, path, title, domain, timestamp) VALUES (867506,'/node/41144','Baby Shower Registry Checklist','dev_fe_family_education_qa6_tothenew_net',1468908062);"
+
+
+breakpts:
+
+
+max-width:1024 -----ipad(landscape)
+992-----------------ipad
+767----------mobile
+480---------
+320-----------
+
+
+---------------------------------------------
+
+
+
+Disqus Password
+Sandbox2017
+
+env-acquia
+dev-dev-develop
+qa-dev2-testing
+stage-test-
+
+node view hook
+-----------------
+uttndsa
+Sharekhan123@
+openvpn  --config Downloads/client.ovpn
+mongo --host 10.0.3.206 -u infoplease-stage -p Stag3m0nG0 infoplease
+mongo --host 10.0.5.184 -u infoplease -p 1nf0pl3a53 infoplease
+-------------------
+scp fensite.dev2@staging-18244.prod.hosting.acquia.com:UrlHelper.php UrlHelper.php
+-------------------------------
+addthis.com
+un: sam.balsama@fen.com
+pw: Sandbox2017
+
+https://www.addthis.com/academy/addthis-javascript-events/	
+
+
+function shareEventHandler(evt) { 
+    if (evt.type == 'addthis.menu.share') { 
+        alert(typeof(evt.data)); // evt.data is an object hash containing all event data
+        alert(evt.data.service); // evt.data.service is specific to the "addthis.menu.share" event
+    }
+}
+
+// Listen for the share event
+addthis.addEventListener('addthis.menu.share', shareEventHandler);
+
+----------------------------DOCKER------------
+sudo docker exec -it fen_mariadb_1 bash
+sudo docker-compose exec --user 82 php drush cr
+sudo docker-compose logs -f php
+
+use db;
+source /var/lib/mysql/filename.sql
+
+configure:
+/admin/config/domain
+
+
+-------------------------------------------------
+tv
+most logged in load 
+same db as fe
+.........
+drush cr
+
+
+
+fe
+newsletter
+50/50
+same db as tv
+uname- alok
+pass-alok@2345
+
+
+-----------------------------------------
+ip
+only content
+no logged in
+drush cr
+
+
+fm
+only content
+no logged in
+---------------------------------
+ALTER TABLE  `TABLE 2` RENAME TO ip_finalurl
+
+update table_name SET col_name=replace(col_name,"search string","new string")
+
+SELECT * FROM `fm_finalurl` where url in (select url from fen_fm.final_url)
+update `ip_finalurl` SET url=replace(url,"https://www.infoplease.com",""),rediret_url=replace(rediret_url,"https://www.infoplease.com","");
+
+insert into fen_fm.final_url(nid,url,redirect_url) select null,url,redirect_url from fm_finalurl
+------------------------------------
+
+739
+

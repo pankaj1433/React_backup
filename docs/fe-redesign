@@ -1,0 +1,28 @@
+design iframe
+
+
+
+$input_grey: #b7b8c0;
+
+
+
+@import "theme-fe/profile-page";
+
+
+
+@include transition(color 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s);
+-webkit-transition: color 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s;
+-moz-transition: color 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s;
+transition: color 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s;
+
+
+
+
+git branches:
+  FE-448-pankaj
+  FE-441-pankaj1433
+  FE-452-pankaj1433
+  FE-457-pankaj1433
+  FE-460-pankaj
+
+
